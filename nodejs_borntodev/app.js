@@ -4,10 +4,15 @@ const port = 3000;
 
 const debug = require('debug')('app');
 //debug app /\/\
-app.get("/", (req,res)=>{
+
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, "./public/demopage/")));
+
+app.get("/", (req, res) => {
     res.send('hello');
 });
 
-app.listen(port,()=>{
-    debug("hi on port "+port);
+app.listen(port, () => {
+    debug("hi on port " + port);
 });

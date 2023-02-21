@@ -1,1 +1,5 @@
 set DEBUG=* & node app.js = start debug on terminal it open any activites on console
+npm run debug /\/\ is the same
+
+cluster = รวมเครื่องต่างๆเป็นระบบเดียว
+template engine = can split header footer and content and split load
